@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <link rel="stylesheet" href="./assets/css/output.css">
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Senõr Potato - O Melhor Batata-Recheada do Brasil!" />
+    <meta property="og:image" content="https://live.staticflickr.com/65535/55280602019_55d8040bd9_m.jpg" />
+    <meta property="og:description" content="Senõr Potato- O Melhor Batata-Recheada do Brasil." />
+    <meta property="og:site_name" content="Senõr Potato" />
+
+    <title>Senõr Potato- O Melhor Batata-Recheada do Brasil!</title>
+</head>
+<body>
+    <header class="w-full h-[420px] bg-zinc-900 bg-header bg-cover bg-center">
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <img 
+                src="./assets/img/hamb-1.png" 
+                alt="Logo Dev Burguer" 
+                class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200" 
+            />
+
+            <h1 class="text-4xl mt-4 mb-2 font-bold text-white">Senõr Potato</h1>
+            <span class="font-medium text-white">Rua Seu Endereço, nº 10, Seu Bairro - Cidade/UF</span>
+
+            <div id="date-span" class="bg-green-600 px-4 py-1 rounded-lg mt-5">
+                <span class="font-medium text-white">Seg à Dom - 18:00 às 22:00</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4">
+        <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-10">Conheça nosso cardápio</h2>
+
+        <div id="itens">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+                <!-- INICIO ITEM -->
+                <div class="flex gap-3">
+                    <img 
+                        src="./assets/img/hamb-1.png" 
+                        alt="Cheese Burger Duplo" 
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" 
+                    />
+        
+                    <div>
+                        <p class="font-bold">Senõr Potato</p>
+                        <p class="text-sm">fermentação natural, batata de 160g, queijo prato e maionese da casa.</p>
+                        
+        
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">R$ 28.90</p>
+                            <button 
+                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                data-name="Senõr Potato"
+                                data-price="28.90"
+                            >
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- FIM ITEM -->
+        
+                <!-- INICIO ITEM -->
+                <div class="flex gap-3">
+                    <img 
+                        src="./assets/img/hamb-2.png" 
+                        alt="Cheese Bacon Duplo" 
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" 
+                    />
+        
+                    <div>
+					
+					  <p class="font-bold">	SenõrBonesa - Batata a bolonheisa</p>
+                        <p class="text-sm">A classica e inconfundivel.Molho a Bolonhesa caseiro,rico em carne moida..</p>
+        
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">R$ 30.90</p>
+                            <button 
+                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                data-name="Cheese Bacon Duplo"
+                                data-price="30.90"
+                            >
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- FIM ITEM -->
+        
+                <!-- INICIO ITEM -->
+                <div class="flex gap-3">
+                    <img 
+                        src="./assets/img/hamb-3.png" 
+                        alt="Smash Burger" 
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" 
+                    />
+        
+                    <div>
+					               				
+                        <p class="font-bold">Senõr Queso</p>
+                        <p class="text-sm">Muito Queijo Mussarela, Bacon + Calabresa
+						Uma experiencia para os amantes dequeijo,bacon ecalabresa! Combinacao deliciosa!
+					</p>
+        
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">R$ 27.90</p>
+                            <button 
+                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                data-name="Senõr Queso"
+                                data-price="27.90"
+                            >
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- FIM ITEM -->
+        
+                <!-- INICIO ITEM -->
+                <div class="flex gap-3">
+                    <img 
+                        src="./assets/img/hamb-4.png" 
+                        alt="Cheese Chicken" 
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" 
+                    />
+        
+                    <div>
+					
+					    <p class="font-bold">Senor Pollo - Frango com Cream Cheesse</p>
+                        <p class="text-sm">Sabor irresistivel!Frangodesfiado temperado,
+						misturado com generoso cream cheese.</p>
+        
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">R$ 30.90</p>
+                            <button 
+                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                data-name="Senor Pollo"
+                                data-price="30.90"
+                            >
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- FIM ITEM -->
+        
+                <!-- INICIO ITEM -->
+                <div class="flex gap-3">
+                    <img 
+                        src="./assets/img/hamb-5.png" 
+                        alt="Cheese Salada" 
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" 
+                    />
+        
+                    <div>
+					
+					
+
+
+                        <p class="font-bold">Senor Strogonoff - Carne Cremoso - Batata Palha</p>
+                        <p class="text-sm">Suculenta! Pedacos de carne bovina em um strogonoffsuper cremoso
+						(com molho de carne de leite, ketchup e cogumelos) e coberto com batata palha crocante..</p>
+        
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">R$ 35.90</p>
+                            <button 
+                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                data-name="Bat_Strogonoff"
+                                data-price="35.90"
+                            >
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- FIM ITEM -->
+        
+                <!-- INICIO ITEM -->
+                <div class="flex gap-3">
+                    <img 
+                        src="./assets/img/hamb-6.png" 
+                        alt="Cheese Orion" 
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" 
+                    />
+        
+                    <div>
+					
+					
+                        <p class="font-bold">Senor Costilla </p>
+                        <p class="text-sm">- Costela Desfiada ao molho Barbecue + Farosa de Abacaxi
+Extraordinario! Sabor! Batata com costela bovina suculente, desfiada e envolvida no molho barbecue,
+farofa de abacaxi levemente adocicada e crocante.</p>
+        
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">R$ 38.90</p>
+                            <button 
+                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                data-name="Bat_CostelaDesfiada"
+                                data-price="38.90"
+                            >
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- FIM ITEM -->
+        
+                <!-- INICIO ITEM -->
+                <div class="flex gap-3">
+                    <img 
+                        src="./assets/img/hamb-9.png" 
+                        alt="Cheese Orion Ring" 
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" 
+                    />
+        
+                    <div>
+										
+                        <p class="font-bold">SenorRosti Queso</p>
+                        <p class="text-sm">Batata suica recheadacom bacon,calabresa, mussarela e requeijao cremoso, gratinada e super saborosa..</p>
+        
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">R$ 20.90</p>
+                            <button 
+                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                data-name="_Suic_RostiQuejo"
+                                data-price="20.90"
+                            >
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- FIM ITEM -->
+				
+				
+				<!-- INICIO ITEM -->
+                <div class="flex gap-3">
+                    <img 
+                        src="./assets/img/hamb-9.png" 
+                        alt="Burger Vegan" 
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" 
+                    />
+        
+                    <div>
+					 
+
+					
+					
+					
+                        <p class="font-bold">SenorRosti Strogonoff</p>
+                        <p class="text-sm">Batata Suica com delicioso recheio de  strogonoff de carne cremoso, 
+						finalizada com QUEIJO gratinado.</p>
+        
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">R$ 25.90</p>
+                            <button 
+                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                data-name="*Suic_RotiStrogonoff*"
+                                data-price="25.90"
+                            >
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+				<!-- INICIO ITEM -->
+                <div class="flex gap-3">
+                    <img 
+                        src="./assets/img/hamb-9.png" 
+                        alt="Burger Vegan" 
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" 
+                    />
+        
+                    <div>
+					 
+			
+					
+                        <p class="font-bold">Senoor Rosti Costilla</p>
+                        <p class="text-sm">Batata suica recheada com costela desfiada ao molho, extremamente suculenta e sabor marcante.</p>
+        
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">R$ 28.90</p>
+                            <button 
+                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                data-name="*Suic_COSTELa*"
+                                data-price="28.90"
+                            >
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- FIM ITEM -->
+				
+				<!-- INICIO ITEM -->
+                <div class="flex gap-3">
+                    <img 
+                        src="./assets/img/hamb-9.png" 
+                        alt="Burger Vegan" 
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" 
+                    />
+        
+                    <div>
+					 
+
+					
+					
+					
+                        <p class="font-bold">Senor Rosti Pollo</p>
+                        <p class="text-sm">Batata suica recheada com frango desfiado e cream cheese,
+						cremosa e muito saborosa.</p>
+        
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">R$ 23.90</p>
+                            <button 
+                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                data-name="*Suic_RostiPollo*"
+                                data-price="23.90"
+                            >
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- FIM ITEM -->
+                <!-- FIM ITEM -->
+            </div>
+
+            <div class="mx-auto max-w-7xl px-2 my-2">
+                <h2 class="font-bold text-3xl">Bebidas</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+                <!-- INICIO ITEM -->
+                <div class="flex gap-3 w-full">
+                    <img 
+                        src="./assets/img/refri-1.png" 
+                        alt="Coca lata" 
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" 
+                    />
+
+                    <div class="w-full">
+                        <p class="font-bold">Coca lata</p>
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">R$ 6.90</p>
+                            <button 
+                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                data-name="Coca lata"
+                                data-price="6.90"
+                            >
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- FIM ITEM -->
+
+                <!-- INICIO ITEM -->
+                <div class="flex gap-3 w-full">
+                    <img 
+                        src="./assets/img/refri-2.png" 
+                        alt="Guaraná lata" 
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" 
+                    />
+
+                    <div class="w-full">
+                        <p class="font-bold">Guaraná lata</p>
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">R$ 4.90</p>
+                            <button 
+                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                data-name="Guaraná lata"
+                                data-price="4.90"
+                            >
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- FIM ITEM -->
+            </div>
+        </div>
+
+        <div 
+            id="cart-modal" 
+            class="bg-black/65 w-full h-full fixed top-0 left-0 z-[99] hidden items-center justify-center"
+        >
+            <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+                <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
+
+                <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+
+                <p class="font-bold">Total: <span id="cart-total" class="">0.00</span></p>
+
+                <p class="font-bold mt-4">Endereço de entrega: </p>
+                <input 
+                    type="text" 
+                    placeholder="Digite seu endereço completo..." 
+                    id="address" 
+                    class="w-full border-2 p-1 rounded my-1"
+                />
+                <p id="address-warning" class="text-red-600 hidden">Digite seu endereço completo!</p>
+
+                <div class="w-full flex items-center justify-between mt-5">
+                    <button id="close-modal-btn" class="bg-gray-200 px-4 py-1 rounded">Fechar</button>
+                    <button id="checkout-btn" class="bg-green-600 text-white px-4 py-1 rounded">Finalizar pedido</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="w-full bg-red-600 py-2 fixed bottom-0 z-40 flex items-center justify-center">
+        <button id="cart-btn" class="flex items-center gap-2 text-white font-bold">
+            [<span id="cart-count">0</span>]
+            Itens no carrinho
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+    </footer>
+    
+    <script src="./assets/js/main.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+</html>
